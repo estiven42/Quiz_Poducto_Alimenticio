@@ -18,4 +18,8 @@ public class Ipml_Productos implements Servicios_Producto
     public List<Entidad_Producto> listarProductos() {
         return repositorioProducto.findAll();
     }
+    public Entidad_Producto guardarProducto(Entidad_Producto producto)
+    {
+        return repositorioProducto.save(producto);
+    }
 }

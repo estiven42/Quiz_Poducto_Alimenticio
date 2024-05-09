@@ -7,4 +7,5 @@ import java.util.List;
 public interface Servicios_Producto
 {
     public List<Entidad_Producto> listarProductos();
+    public Entidad_Producto guardarProducto(Entidad_Producto producto);
 }
